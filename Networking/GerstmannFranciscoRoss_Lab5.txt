@@ -1,0 +1,40 @@
+Networking Lab 5
+RAVE / METASPLOIT
+
+10-28-13
+
+Clay Francisco
+Malcom Ross
+Kalex Gerstmann
+
+Step 2-4: Command that -
+		a)  displays modules of a given type?
+			-show
+		b)  assigns vars?
+			-set
+		c) 	selects a module by name?
+			-use
+
+Step 3-2: What info is returned by sysinfo
+		a)  displays OS info, platform architechture, and language (en_US)
+
+Step 3-4: window opened automatically.
+
+Q1)	What is the metasploit framework and what is it used for?
+
+	It's a tool for testing various exploit codes.
+
+Q2)	How might attackers use the metasploit framework used by penetration testers?
+
+	Metasploit allows you to create VMs that simulate platforms and test exploits for
+	the given platforms in a safe environment.
+
+Key Terms Quiz:
+
+1)	To test the security of a network penetration testers use the "Metasploit framework"
+
+2)	As new vulnerabilities are created, new "exploits" are developed and then made
+	available for use with MSF by downloadable "plugins".
+
+3)	The "payload" is the actual code executed after a successful use of MSF.
+

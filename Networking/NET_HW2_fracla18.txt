@@ -1,0 +1,27 @@
+Clay Francisco
+
+Networking 
+
+Homework 2
+
+11-01-13
+
+Prob: R21, R22, R27, P25, P31, P32
+
+
+
+R21)    Emission/Transmission rate, Max/Min.
+        Given those rates: traffic intensity.
+        How long until packet loss.
+        Perform twice and compare values.
+
+        a)  Max = 500, Min = 350
+        b)  Intensirty = High
+        c)  Packet loss occurs when the queue is full and the reciever is still
+            recieving packets from the sender.  Speeds will be different for
+            sized different packets.  So queue-filling maxes out with bit-rate
+
+R22)    5 Tasks a layer can perform.
+        Can more than one task be performed on more than one level.
+        
+        a)   

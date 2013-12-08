@@ -1,0 +1,168 @@
+Clay Francisco
+
+Homework 3
+
+Networking
+
+11-02-13
+
+Prob: R1, R3, R5, R7, R9, R11, R13-15, P1-5
+
+
+R1) 5 non proprietary applications and their protocols
+	
+	a) 	email;					SMTP, 	TCP
+	b)	Web;					Telnet,	TCP
+	c)	File transfer;			FTP,	TCP
+	d)	Streaming (e.g. vid);	HTTP,	TCP
+	e)	Telephony;				SIP,	UDP or TCP
+
+R3)	Clinet VS Server
+
+	the client is the process initiating the communication and the server 
+	(host) is the process providing the requested services.
+
+R5)	What info is used to distinguish different processes and thier different hosts?
+
+	hosts can be identified by their IP address and port number (the port/address to 
+	which their process has been assigned). 
+
+R7)	use Fig 2.4; Find application that needs 0% data-loss and is time-sensitive
+
+	I suppose anytime you needed to control a dynamic, critical system.
+
+	something that needed real-time (streaming/time-sensitive) updates and needed 
+	ALL of them (loss-intolerant).  
+
+	So maybe some kind of Tom-Tom style GPS application?  I guess depending on HOW
+	fast you needed it to update (e.g. how fast you were traveling) would really
+	dictate how loss-intolerent the application would need to be.
+
+R9)	SSL is on Transport or Application layer?
+	To enhance TCP with SSL?
+	
+	a) 	SSL is in the Appplication layer.
+	b)	This requires SSL code on both client and server side to enable
+		encryption / decryption. 
+
+R11) HTTP, FTP, SMTP and POP3 all run on TCP rather than UDP because all of these
+	 protocols require stricter information delivery guidelines that are not provided by 
+	 UDP.  TCP provides, in-order and intact delivery guarantee.
+
+R13) How does web caching reduce delay?
+	 Will web caching reduce delay for all objects? if so, why?
+
+	 a)	by creating a proxy server (with it's own resources) that saves connection
+		information for quicker accesss (so you don't have to search the network
+		everytime you want to connect to Facebook).
+
+	 b) No, only objects in the cache will be accessed faster.  
+
+****************
+R14)     *******--finish
+
+P1)	
+	a) True, 4 responses = 1, last handshake, 2-4, image Acks
+	b) True
+	c) False, it can only carry one message at a time
+	d) False, the "Date:" header is WHEN the pakcet was sent
+	e) False, you can put whatever you want in the message body (not that it'll work)
+	
+P2) Access control commands:
+		USER, PASS, ACCT, CWD, CDUP, SMNT, REIN, QUIT 
+
+	Transer paramater commands:
+		PORT, PASV, TYPE, STRU, MODE
+
+	FTP service commands:
+		RETR, STOR, STOU, APPE, ALLO, REST, RNFR, RNTO, ABOR, DELE, RMD,
+		MKD, PWD, LIST, NLST, SITE, SYST, STAT, HEKP, NOOP
+
+P3) Finding/requesting an unknown HTTP server
+
+    	DNS (the address book), used to obtion the IP adress of the HTTP server
+	  &	TCP protocol needed to establish the HTTP connection.
+
+
+		*****from the book  pg 131*****
+***************************************
+		1. The same user machine runs the client side of the DNS application.
+		2. The browser extracts the hostname, www.someschool.edu, from the URL 
+		   and passes the hostname to the client side of the DNS application.
+		3. The DNS client sends a query containing the hostname to a DNS server.
+		4. The DNS client eventually receives a reply, which includes the IP 
+		   address for the hostname.
+		5. Once the browser receives the IP address from DNS, it can initiate a 
+		   TCP connection to the HTTP server process located at port 80 at that 
+		   IP address.
+
+P4) In Wireshark readout, find:
+	
+	URL of doc requested by browser.
+	HTTP ver.
+	Connection type,
+	IP adress of host.
+	Initiating browser type.
+	
+	a) 	line 1: "GET /cs453/index.html HTTP/1.1<cr><lf>Host: 
+				 gaia.cs.umass.edu<cr><lf>User-Agent:"
+		
+			--gaia.cs.umass.edu/cs453/index.html
+
+	b) 	line 1: "HTTP/1.1"
+		
+			--ver 1.1
+
+	c) 	last line: "-8859-1,utf-8;q=0.7,*;q=0.7<cr><lf>Keep-Alive: 300
+				   <cr><lf>Connection:keep-alive<cr><lf><cr><lf>"
+
+			--keep-alive = Persistant	
+
+	d) 	I don't know, mayb it's just the plain version of the URL?
+		
+			--gaia.cs.umass.edu?
+
+		*I thought the IP address had to be in the form "127.255.255.255" and I can't 
+		 find that pattern in there anywhere.
+
+	e)
+		 1)	Netscape 7.2
+		 2) Browser type is important because each browser needs it's info sent in a 
+		    different format.
+
+P5) In Wireshark readout, find:
+
+	If server was able to find doc (and time).
+	When doc was last modified.
+	Size of return doc.
+	first 5 BYTES of return doc.
+
+	a)	line 1.5: "HTTP/1.1 200 OK<cr><lf>Date: Tue, 07 Mar 2008 12:39:45GMT<cr><lf>
+				   Server: Apache/2.0.52 (Fedora)"	
+		
+			--Tue, 07 Mar 2008 12:39:45GMT
+
+	b)	line 3+: "<cr><lf>Last-Modified: Sat, 10 Dec2005 18:27:46GMT<cr><lf>" 	
+
+			--Sat, 10 Dec 2005 18:27:46GMT
+	
+	c)	line 4+: "... ETag: “526c3-f22-a88a4c80”<cr><lf>AcceptRanges:bytes
+					  <cr><lf>Content-Length: 3874<cr><lf>" 
+		
+			--bytes 3874
+
+	d)	line 13+: "5.0; U) Netscape]”><lf> <title>CMPSCI 453 / 591 / NTU-ST550A
+				   Spring 2005 homepage</title><lf></head><lf>"
+
+			1)	I think it's the title of the doc. 
+			  	"CMPSCI" (less the "I") = "CMPSC" ?
+			
+			2)	line 6+: "Keep-Alive: timeout=max=100
+						  <cr><lf>Connection: Keep-Alive<cr><lf>"
+			
+			--Keep-Alive but timeout at 100 (seconds or milliseconds?)
+
+
+
+
+ 

@@ -1,0 +1,18 @@
+Networking Lab 1
+
+Clay Francisco
+
+Eric Mitchell
+
+09-30-13
+
+
+1)  In the "details" pane it appers that the HTTP protocol happens last and 
+	Ethernet happens first
+
+2)  We have 8 but it was because we refreshed the  page a couple of times. 
+	There were only two packets for the send/recieve action of downloading the 
+	UMASS web page.
+
+3)  TCP, ARP, SMB, IGMPv2, DNS, HTTP, DHCPv6, MDNS, NTP, BROWSER.
+

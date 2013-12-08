@@ -1,0 +1,61 @@
+Networking Lab 7
+
+Recon with TCP & UDP + EDURange
+
+Team 5
+
+
+Clay Francisco
+Justin Christiansen
+Kalex Gerstmann
+Eric Mitchell
+Zach Kamerling
+Edwin Warner
+
+we are the group who couldn't change the permissions on our .ssh files in the first VM.
+
+we couldn't "cd" into the .ssh directory in the first VM (CH) or change permissions on any of the enclosed files.
+
+Stephen confirmed he also encountered the same problem.
+
+
+EDIT!!!!
+Turns out we did get it to work towards the last 45min of class
+
+1) 	fastest scan = nmap -Ps <host path>
+
+	time = 1.33sec
+
+2) 	quietest scan = nmap -sM <host path>
+
+	Urial Maimon scan, super stealthy
+
+3)	Host:  tcp 22,( 25???? )
+
+	Ports unknown: 	64623
+					64680
+					65000
+					65129
+					65389
+		 
+	Services: 	22 = ssh,
+				25 = smtp,
+				rest = unknown
+
+END EDIT!!!
+
+
+ONTO complaints::
+
+
+So the initial problem was with the fact that the "directions" were just a message tag
+on the login screen of the EC2 website.  There were no "actual" directions tab or any indecator in the lab 7 handout that showed us where we might find this info.
+
+Then we ran into problems with the permmissions of our user.  i.e. the chmod command
+wouldn't work.  
+Stephen had to fix our permissions on the back end before we could complete the lab.
+
+Additionally the size of the groups made the lab unweildy and hard to organize.  It was a lot of people to have crowded around one box.
+
+This caused one or two people to do the majority of work while the rest of the group talked about... whatever. 
+  

@@ -1,0 +1,87 @@
+Clay Francisco
+
+10-18-13
+
+Networking Homework 1
+
+Problems: 
+R1, R4, R11, R13, R14, R18, R19, P4-P6, P10-P13
+
+R1) 	Link Layers and circuit swithces.
+
+R4)		Coaxial, Ethernet, Fiberoptic
+
+R11)	Total transmission delay: (L/R1)+(L/R2)
+
+R13)	a) Only 1 at a time.  Or 5 if each user only uses 20% than .20 x 5 = 1Mbps
+
+		b) The link can support 2mbps, each user only uses 1Mbps so 2 users can be supported.
+
+		c) If each user only transmits 20% of the time than that is their probability. 
+		   --> .20 OR 20% 
+
+		d) 3 users = 60% chance that 1 user is using at any given time.
+		   Probability of all 3 = .20 x .20 x .20 = .008 = .8% 
+
+R14)	Because traffic is so high the fees they would charge eahc other would end up being a wash, creating 
+		excess workloads. 
+
+		If they avoid paying a provider ISP the two ISPs can create a direct connection with each other. 
+		The IXPs can create a "network" of laterally connected ISPs and charge each ISP to be part of the 
+		"network".
+
+R18)	Packet length = 1000 bytes
+		Link Dist 	  = 2,500 km 
+		Total delay   = 2.5 x 10^8 m/s
+		Trans time 	  = 8 Mbps / 2 Mbps
+		PropDelay     = d/s + L/R
+
+
+R19)	a) Max Throughput = 500 kbits OR 500,000 bits/sec
+		
+		b) 4,000,000 bytes / 500kbits =  ~ 62sec ?
+					
+		c) It would take 1,000 (or 1024) times longer than the previous example because the throughput is
+		   1/1000 th of the previous example.
+
+P4)		a)	16
+		b)	4
+		c)  sure, but A<->C won't see B<->D and vice-versa.
+		
+P5)		L = 160,000
+		TimeDivided = 12 slots
+		bitRate = 1.536 Mbps
+		ConnectX = .6 sec
+	
+		It will take 12 times longer than if it were a non-divided base-band signal. Or than if it had a 
+		constant connection.  The tyime-division cuts the users available bandwidth by 12.
+
+P6)		a)	d_Prop 	  = m/s
+		b)	transTime = L/R
+		c)	m/s + L/R
+		d)	Still needs to be processed because of d_Prop.
+		e)	Still being propogated.
+		f)	on it's way to Host B
+		g)	d_Prop  = m/s
+			d_Trans = L/R
+			
+			(m/2.5 x 10^8) = (120 bits / 56 kbps) = 
+
+		     m = (120 bits / (56 kbits/s)) x (2.5x10^8)
+
+			"this doesn't make sense; this packet would take like days to send.  I think I'm doing this wrong"
+		
+P10)	Dist 	  = Di
+		PropSpeed = Si
+		TransRate = Ri
+				i = 1, 2, 3
+				and L;
+
+		3(d_Prop) + 3(S)
+
+P11) 	3S, (just subtract the propagation delay)
+
+P12)  Can't find queing delay.
+
+
+

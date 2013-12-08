@@ -1,0 +1,23 @@
+Clay Francisco
+Savannah Brown
+Eric Mitchell 
+
+10-07-13
+
+Networking
+Lab 2
+
+1) What version of HTTP?  Both send-recieve  = 1.1
+
+2) What language (if any) will the browser except
+
+3) IP address of ME = 10.14.11.52, IP address of UMASS = 128.119.245.12
+
+4) Status code returned = 200
+
+5) File was last modified Monday Oct 7 2013
+
+6) How many bytes was the transfered was packet1 = 128, packet 2 = 294
+   Might not be 2 packets its just that we have 2 and are prety sure they are all pa tof the some
+
+7)

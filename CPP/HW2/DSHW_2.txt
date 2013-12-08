@@ -1,0 +1,94 @@
+Clay Francsico
+
+Data Structures
+
+Homework Set 2:
+
+10-24-13
+
+E 2.1)  Ordered functions: 
+    
+    2/N, 37, sqrt(N), Nlog (log N), Nlog N, Nlog N^2, Nlog^2 N, 
+    N^1.5, N^2, N^2logN, N^3, 2^(N/2), 2^N
+    
+E 2.2)  Suppose:
+
+    T1(N) = O(f(N))  &&  T2(N) = O(f(N))
+    
+        Which are TRUE?:
+    
+    a)  T1(N) + T2(N) = 'big'O(f(N)) ?  TRUE
+    b)  T1(N) - T2(N) = 'lil'o(f(N)) ?  FALSE
+    c)  T1(N) / T2(N) = 'big'O(1)    ?  FALSE
+    d)  T1(N) = 'big'O(T2(N))        ?  FALSE
+
+E 2.3)  Which function grows faster?:
+
+    N log N 
+OR 
+    (N^(1+x)) / sqrt(log N)  
+    
+    where x > 0
+
+    The second equation grows faster for all x > .25
+
+    When x is less then .25 then the first equation grows faster
+
+E 2.7)  For all 6 give:
+
+    a)  running time in Big-O notation:
+        1)  O(n)
+        2)  O(n^2)
+        3)  O(n^3)
+        4)  O(n^2)
+        5)  O(n^3)
+        6)  O(n^4)
+
+    b)  implement in any language you want and give running times for 
+        several values of N:
+
+        * couldn't get a "timestamp" function to work in C++.  
+          I got the "GetTicks()" function working but it only gives time in
+          clock ticks NOT in milliseconds.  My loops do work though and give
+          times relative to each other at least.
+
+        * see "RunTimes" and "RunTimes.cpp"
+
+    c)  give analysis with actual running times:
+        1) 
+        2)
+        3)
+        4)
+        5) 
+        6) .18sec for input = 55.   or 55^4, ~9.1mil
+    
+E 2.14) Horner's Rule:
+    CODE:   poly = 0;
+            for(i = n; i >= 0; i++)
+                poly = x * poly + a[i]
+
+        a)  show steps for: 
+            x = 3, f(x) = 4x^4 + 8x^3 + x + 2
+        ???
+        b)  Explain why this algorithm works: 
+                Because it has a proper terminating clause? 
+        
+        c)  O(n^x)
+
+E 2.15) Give an efficient algorithm to look for an int 
+        "i" such that: A[i] = i
+        given A1 < A1 < A3 < An.
+
+        for(i = 0; i < A.length(); i++)
+            if(A[i] == i)
+            return "true"
+            else 
+            return "false"
+        
+        running time = O(n)
+
+E 2.26) *program goes here
+
+E 2.28) *program goes here
+
+E 2.31) 

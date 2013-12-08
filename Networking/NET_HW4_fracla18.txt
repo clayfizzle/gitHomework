@@ -1,0 +1,61 @@
+Clay Francisco
+
+Networking 
+
+Homework 4
+
+11-22-13
+
+Prob: R19, R21, R24, P19, P21, P23, P28, P29, P31, P32, P33
+
+
+R19)    Is it possible for Web/Mail servers to have the same Alias for the same host?
+        What would be the type for the RR that contains the host name of 
+        the mail server?
+
+        a)  Yes, an Alias can point to multiple servers
+        b)  The RR type is Alias.
+
+
+R21)    Will Bob return the favor?  Why/Why not?
+
+        He should.  If he doesn't he won't get as fast of download speeds as if 
+        did.  Torrenting gives highest priority to those who seed (the Alice's) so
+        it is in Bob's best interest to do so. 
+
+R24)    Advantages/Disadvantages of:
+            Total Knowledge DHTs &
+            Circular DHTs
+
+            a)  The advantages of tracking every peer is that - transmition
+                time is always reduced to it's smallest possible distance.
+                i.e. getting to communicate directly (without intermediaries).
+            
+                The disadvantage being that - each peer has to store far more
+                information than in Circular DHTs as well as the addition of an
+                internal searching/matching function. 
+            
+            b)  Circular DHTs are the "linked list" version of peer tracking.
+                They are the simplest (or rather the most memory light) way you 
+                can keep track of peers.
+            
+                The disadvantage would be is that do to their memory light
+                configuration they are the least time effecient way to track peers. 
+                (which is why you want shortcuts)
+
+P19)    
+
+P21)
+
+P23)
+
+P28)
+
+P29)
+
+P31)
+
+P32)
+
+P33)
+

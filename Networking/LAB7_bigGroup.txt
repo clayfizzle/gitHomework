@@ -1,0 +1,21 @@
+Networking Lab 7
+
+Recon with TCP & UDP + EDURange
+
+Team 5
+
+
+Clay Francisco
+Justin Christiansen
+Kalex Gerstmann
+Eric Mitchell
+Zach Kamerling
+Edwin Warner
+
+we are the group who couldn't change the permissions on our .ssh files in the first VM.
+
+we couldn't "cd" into the .ssh directory in the first VM (CH) or change permissions on any of the enclosed files.
+
+Stephen confirmed he also encountered the same problem.
+
+

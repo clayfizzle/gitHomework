@@ -1,0 +1,64 @@
+Q) 2.1
+    
+    t  = time
+    n  = periods per job
+    j  = number of jobs to do    
+
+    ta = n * t
+    th = j/ ((j/2 * n * t) * (.5 * n * t))
+    
+    pu = % of time PROCESSOR is active
+
+    a) 1 job
+        
+        Turn around    = n * t
+        Throughput     = 1 / (.5 * n) + (.5 * n) 
+        Processor Util = .5 * n * t
+    
+    b) 2 job
+        
+        Turn around    = n * t
+        Throughput     = 2 / n + (.5 * n * t)
+        Processor Util = active / total time = 
+    
+    c) 4 job
+            
+        Turn around    = n * t
+        Throughput     = 4 / ((4/2 * n * t) + (.5 * n * t))
+        Processor Util = 4/2 + .5 * n * t
+
+
+Q) 2.2
+
+    IO-bound        = spends more time waiting for IO than using the Processor
+    Processor-bound = spends more time using the Processor than waiting for IO
+
+    If the algorithm favors processes that take up small amounts of processing power 
+    it should complete the "short" processes first and then move to the more computationally
+    intensive processes.  
+    Additionally it would be almost impossible to generate enough IO processes to 
+    override all the Processor-bound processes.
+
+Q) 2.3
+
+    Multi-Programming VS Time-Sharing
+
+    Time-sharing implies multiple users where multi-programming does not.  
+    Therefore time-sharing policies must be much more conserned with even allocation of CPU
+    resources.  Multi-programmingpolicies will be more conserned with optimazing CPU performance, 
+    oftentimes at the expence of an individual process like IO-bound processes.  
+    Time-sharing can't be as flexible with resource allocation because it each user must recieve
+    their allocated time-shre regardless of whether they may use it or not.
+
+Q) 2.4
+    
+    System calls allow the OS to request operations only performable by the kernel.  
+    Without system calls we would be able to read or write from memory etc...
+    
+    User-mode is when is the OS is performing user-requested operations i.e. running applications
+    like browsers and games.
+
+    Kernel-mode is when the OS asks the kernel to perform read-write and IO operations that are 
+    hardware dependent.
+        
+

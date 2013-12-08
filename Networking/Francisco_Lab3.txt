@@ -1,0 +1,23 @@
+Clay Francisco
+10-27-13
+Networking 
+Lab 3
+
+
+I must apologize for turning this lab in so late.  
+
+It is partially do to the fact that I couldn't get this lab to work. 
+I did observe Duncan get it to work on a single lab computer attacking itself.
+
+After discussing it with Duncan and having him explain the "what's and why's" of
+how he got the exercise to work it became apparent that it was my unfamiliarity with the internal structure of socket/port architechture.
+
+Once he got the machines communicating, Wireshark gave fairly clear readouts of the Slowloris Get-request-stall.
+
+The lab machine Duncan got the exercise to work on was Kalex's/Zach's so all the Wireshark documentation is in the report.
+
+This lab made it very apparent I need a greater understanding of the information flow of socket/port architechture. 
+
+Maybe the exploration we are doing of the OS 161 will help.
+
+
